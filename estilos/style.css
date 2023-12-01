@@ -133,6 +133,7 @@ article {
 
 article .titulo h3 {
   font-size: 30px;
+  margin: 10px 0;
 }
 
 .descripcion p {
@@ -330,6 +331,7 @@ footer a {
   .acerca-de {
     display: flex;
     align-items: center;
+    text-align: center;
   }
 
   .trabajo-img {
@@ -344,6 +346,7 @@ footer a {
     display: flex;
     flex-direction: column;
     padding: 0 0 50px 0;
+    text-align: center;
   }
   .trabajo {
     margin-top: 20px;
@@ -356,25 +359,25 @@ footer a {
   }
 
   .form-row {
-    flex-direction: row;
-    align-items: flex-start;
+    flex-direction: column;
+    align-items: center;
     margin-bottom: 20px;
+    justify-content: center;
   }
   .form-row input[type="text"],
   .form-row input[type="email"] {
-    width: 250px;
+    width: 100%;
     height: initial;
   }
   .form-row label {
-    text-align: right;
+    text-align: center;
     width: 120px;
     margin-top: 7px;
-    padding-right: 20px;
   }
   .form-row textarea {
-    width: 250px;
+    width: 100%;
   }
-  .form-row button {
-    margin-left: 120px;
+  .form-row select[type="pais"] {
+    width: 35%;
   }
 }
