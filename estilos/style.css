@@ -79,6 +79,15 @@ p {
   margin: 15px 0 0 15px;
 }
 
+.greeting {
+  font-weight: bold;
+  text-shadow: -1px -1px 1px #aaa, 0px 2px 1px rgba(0, 0, 0, 0.217);
+}
+.greeting > p::first-letter {
+  font-size: 130%;
+  color: green;
+}
+
 .section2 {
   display: flex;
   justify-content: center;
