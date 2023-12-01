@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/c9b87a4bee.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./estilos/style.css" />
+    <script
+      src="https://kit.fontawesome.com/dce13ff17c.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <header id="encabezado">
+        <a class="logo" href="index.html"> <i class="fa-solid fa-heart"></i></a>
+
+        <nav class="navbar">
+          <input type="checkbox" id="check" />
+          <label for="check" class="checkbtn">
+            <i class="fa-solid fa-bars"></i>
+          </label>
+          <ul class="menu">
+            <li><a href="index.html" target="_blank">Inicio</a></li>
+            <li><a href="http://">Acerca de</a></li>
+            <li><a href="http://">Trabajos</a></li>
+            <li><a href="http://">Servicios</a></li>
+            <li><a href="http://">Contacto</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <section class="section1">
+          <div class="acercaImagen">
+            <img
+              src="./image/neom-gVDUuJaG_wM-unsplash.jpg"
+              alt="Hero"
+              title="Hero"
+            />
+          </div>
+          <div class="acerca-de">
+            <h2>Acerca de mí</h2>
+            <p class="parrafo1">
+              ¡Bienvenido a mi página! Aquí, aprenderás más sobre mí.
+            </p>
+
+            <p class="parrafo2">
+              Me llamo Andrew, nací en Bogotá y he vivido aquí toda la vida. Me
+              gusta el helado y salir a pasear en días de sol aunque lleuve
+              bastante en la ciudad. Me encantaría aprender a programar para
+              poder ayudar a las personas a mostrar lo que hacen.
+            </p>
+          </div>
+        </section>
+        <section class="section2">
+          <img
+            src="./image/istockphoto-514722936-1024x1024.jpg"
+            alt="Imagen Carrusel"
+          />
+        </section>
+      </main>
+
+      <article class="trabajos">
+        <div class="cajaTrabajos">
+          <div class="trabajoUno trabajo">
+            <div class="imagen1 trabajo-img">
+              <!-- <img src="./image/barco .jpg" alt="vista de barco desde arriba" /> -->
+            </div>
+            <div class="texto">
+              <div class="titulo">
+                <h3>Barco</h3>
+              </div>
+              <div class="descripcion">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
+                  saepe sed accusantium, consectetur nemo harum? Modi, incidunt
+                  consequuntur earum officiis veritatis perspiciatis numquam!
+                  Natus, earum obcaecati. Laborum natus exercitationem tempore.
+                </p>
+                <a href="http://">Leer más</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="trabajoDos trabajo">
+            <div class="imagen2 trabajo-img">
+              <!-- <img src="./image/jeep.jpg" alt="jeep en medio del desierto" /> -->
+            </div>
+            <div class="texto">
+              <div class="titulo">
+                <h3>Jeep</h3>
+              </div>
+              <div class="descripcion">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
+                  saepe sed accusantium, consectetur nemo harum? Modi, incidunt
+                  consequuntur earum officiis veritatis perspiciatis numquam!
+                  Natus, earum obcaecati. Laborum natus exercitationem tempore.
+                </p>
+                <a href="http://">Leer más</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="trabajoTres trabajo">
+            <div class="imagen3 trabajo-img">
+              <!-- <img src="./image/moto.jpg" alt="moto en medio del bosque" /> -->
+            </div>
+            <div class="texto">
+              <div class="titulo">
+                <h3>Moto</h3>
+              </div>
+              <div class="descripcion">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
+                  saepe sed accusantium, consectetur nemo harum? Modi, incidunt
+                  consequuntur earum officiis veritatis perspiciatis numquam!
+                  Natus, earum obcaecati. Laborum natus exercitationem tempore.
+                </p>
+                <a href="http://">Leer más</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+      <div class="form-header">
+        <h1>Contacto</h1>
+        <p><em>¡Esperamos tu consulta!</em></p>
+
+        <form action="" method="get" class="formulario" id="form">
+          <div class="form-row">
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre" />
+          </div>
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="pepe@gmail.com"
+            />
+          </div>
+          <div class="form-row">
+            <label for="pais">Selecciona tu país</label>
+            <select name="pais" id="pais" type="pais">
+              <option value=""></option>
+              <option value="Colombia">Colombia</option>
+              <option value="Venezuela">Venezuela</option>
+              <option value="Perú">Perú</option>
+              <option value="Argentina">Argentina</option>
+              <option value="brasil ">Brasil</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje"></textarea>
+          </div>
+          <div class="form-row">
+            <button type="submit" id="submit">Enviar</button>
+          </div>
+          <p class="alertas" id="alertas"> </p>
+
+        </form>
+      </div>
+
+      <footer>
+        <div class="info">
+          <h3>Pie de página</h3>
+          <ul>
+            <li>Inicio</li>
+            <li>Contacto</li>
+            <li>Únete al equipo</li>
+          </ul>
+        </div>
+        <a class="logo" href="index.html"> <i class="fa-solid fa-heart"></i></a>
+      </footer>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

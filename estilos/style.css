@@ -1,0 +1,371 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: rgb(244, 244, 244);
+  width: 100%;
+}
+#encabezado {
+  display: flex;
+  align-items: center;
+  border: 1px solid #000000;
+  padding: 15px 0;
+  justify-content: space-between;
+  background-color: #5f4218;
+}
+#encabezado .logo {
+  font-size: 30px;
+  margin-left: 2rem;
+  color: white;
+}
+#check {
+  display: none;
+}
+.checkbtn {
+  font-size: 25px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#encabezado nav .menu {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  padding-right: 15px;
+}
+
+#encabezado nav ul li {
+  width: 100px;
+  text-align: center;
+}
+#encabezado nav ul li a {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.section1 {
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+  margin: 2rem 0;
+}
+.acercaImagen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+img {
+  width: 200px;
+}
+
+.acerca-de {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 300px;
+  text-align: right;
+  margin-right: 20px;
+}
+
+p {
+  margin: 15px 0 0 15px;
+}
+
+.section2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section2 img {
+  width: 100%;
+  height: 70%;
+}
+article {
+  width: 100%;
+  margin-top: 30px;
+}
+.cajaTrabajos {
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.trabajo {
+  width: 30%;
+  margin: 0 10px 0 10px;
+}
+
+.imagen1 {
+  background-image: url("../image/barco .jpg");
+}
+.imagen2 {
+  background-image: url("../image/jeep.jpg");
+}
+.imagen3 {
+  background-image: url("../image/moto.jpg");
+}
+
+.trabajo-img {
+  width: 100%;
+  height: 400px;
+  border-radius: 5px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+article .titulo h3 {
+  font-size: 30px;
+}
+
+.descripcion p {
+  margin: 10px 0 10px 0;
+}
+.descripcion a {
+  border: none;
+  color: #bd8b40;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-direction: row;
+  background-color: #5f4218;
+  padding: 40px;
+}
+footer .info {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  width: 20%;
+}
+footer h3 {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  color: #bd8b40;
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  list-style: none;
+  width: 100%;
+  padding: 0;
+}
+
+footer ul li {
+  width: 70%;
+  display: flex;
+  text-align: left;
+  margin-top: 0.5rem;
+}
+
+footer a {
+  color: yellow;
+  font-size: 20px;
+}
+
+.form-header {
+  text-align: center;
+  background-color: #f6f7f8;
+  border: 1px solid #d6d9dc;
+  border-radius: 3px;
+
+  width: 80%;
+  margin: 10px auto;
+  padding: 50px;
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-header h1 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+/* ------------- Formulario ------------- */
+
+.formulario {
+  background-color: #f6f7f8;
+  border: 1px solid #d6d9dc;
+  border-radius: 3px;
+
+  width: 80%;
+  padding: 50px;
+  margin: 30px 0 40px 0;
+}
+/* ------------- Campos del Formulario ------------- */
+
+.form-row {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.form-row input[type="text"],
+.form-row input[type="email"],
+.form-row select[type="pais"] {
+  background-color: #bdbdbd;
+  border: 0;
+  border-radius: 6px;
+  /* width: 100%; */
+  padding: 7px;
+  font-size: 14px;
+}
+
+.form-row label {
+  margin-bottom: 3px;
+  text-align: initial;
+}
+.form-row textarea {
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-size: 14px;
+
+  background-color: #bdbdbd;
+  border: 0;
+  border-radius: 6px;
+
+  min-height: 200px;
+  margin-bottom: 10px;
+  padding: 7px;
+  resize: none;
+
+  /* width: 100%; */
+}
+.form-row button {
+  font-size: 16px;
+  font-weight: bold;
+
+  color: #ffffff;
+  background-color: #5995da;
+
+  border: none;
+  border-radius: 3px;
+
+  padding: 10px 40px;
+  cursor: pointer;
+}
+
+.form-row button:hover {
+  background-color: #76aeed;
+}
+
+.form-row button:active {
+  background-color: #407fc7;
+}
+
+@media (max-width: 768px) {
+  #encabezado {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #5f4218;
+    padding: 0;
+  }
+
+  .checkbtn {
+    display: block;
+  }
+
+  header nav .menu {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #2c3e50;
+    text-align: center;
+    top: 80px;
+    left: 100%;
+    transition: all 0.5s;
+  }
+
+  #check:checked ~ ul {
+    left: 0;
+    display: block;
+  }
+
+  #encabezado nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+    text-align: center;
+    width: 100%;
+  }
+
+  #encabezado nav ul li a {
+    font-size: 20px;
+  }
+  #check:checked ~ .checkbtn {
+    color: #2c3e50;
+  }
+
+  .section1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .acerca-de {
+    display: flex;
+    align-items: center;
+  }
+
+  .trabajo-img {
+    width: 100%;
+    height: 160px;
+    border-radius: 5px;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .cajaTrabajos {
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 50px 0;
+  }
+  .trabajo {
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .form-header {
+    padding: 50px;
+  }
+
+  .form-row {
+    flex-direction: row;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+  .form-row input[type="text"],
+  .form-row input[type="email"] {
+    width: 250px;
+    height: initial;
+  }
+  .form-row label {
+    text-align: right;
+    width: 120px;
+    margin-top: 7px;
+    padding-right: 20px;
+  }
+  .form-row textarea {
+    width: 250px;
+  }
+  .form-row button {
+    margin-left: 120px;
+  }
+}
